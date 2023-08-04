@@ -1,0 +1,21 @@
+.sectionIllustration {
+
+    &__gradient {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        z-index: 1;
+        background: rgb(255,255,255);
+        background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+}

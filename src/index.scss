@@ -1,8 +1,10 @@
 * {
   position: relative;
   box-sizing: border-box;
+  font-family: 'Poppins';
   margin: 0;
   padding: 0;
+  font-size: 1.1rem;
 }
 
 body, #root {
@@ -14,18 +16,17 @@ html {
 }
 
 :root {
-  font-family: 'Fira Sans Condensed';
   line-height: 1.5;
   font-weight: 400;
-  --dark: #30332d;
+  --dark: #171D31;
   --darksteel: #686862;
   --steel: #939186;
   --bone: #f9f4de;
   --white: #ffffff;
-  --leaf: #95ce63;
+  --leaf: #65C881;
   --coral: #eab063;
   --radius-primary: 2px;
-  --font-consolas: 'Consolas';  
+  --padding-section: 60px 50px;
 
   --xs: 420px;
   --sm: 576px;
@@ -62,18 +63,12 @@ ul li {
 
 .section {
   position: relative;
-  min-height: 85vh;
-  padding: 50px 30px;
 }
 
 .separator {
-  width: 95%;
+  width: 10%;
   height: 1px;
   background-color: var(--dark);
-  position: absolute;
-  opacity: 0.15;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 20px auto;
 }
 

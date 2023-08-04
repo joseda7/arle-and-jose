@@ -1,0 +1,26 @@
+.sectionLetter {
+    padding: var(--padding-section);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__letter {
+        max-width: 400px;
+        margin: 20px auto;
+        &__goal {
+            text-align: center;
+        }
+        img {
+            max-width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__photo {
+        max-width: 400px;
+        margin: 20px auto;
+        display: block;
+        
+    }
+}

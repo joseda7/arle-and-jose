@@ -1,25 +1,16 @@
-import { useEffect, useState } from "react"
-import useContentful from "./hooks/useContentful"
+import SectionHome from './components/organisms/SectionHome/SectionHome'
+import SectionGift from './components/organisms/SectionGift/SectionGift'
+import SectionLetter from './components/organisms/SectionLetter/SectionLetter'
+import SectionIllustration from './components/organisms/SectionIllustration/SectionIllustration'
 
 function App() {
 
-  const [guests, setGuests] = useState<any>([]);
-  const { getGuests, updateGuests } =  useContentful();
-
-  useEffect(() => {
-    getGuests().then((response)=> {
-      setGuests(response);
-      console.log(response);
-    })
-  },[])
-  
   return (
     <>
-      <h1> Arle&Jose </h1>
-      <div>
-        { JSON.stringify(guests) }
-      </div>
-      <button onClick={() => {updateGuests()}}> Update Guests </button>
+      <SectionHome/>
+      <SectionIllustration/>
+      <SectionGift/>
+      <SectionLetter/>
     </>
   )
 }

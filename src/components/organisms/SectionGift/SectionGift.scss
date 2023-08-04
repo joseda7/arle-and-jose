@@ -1,0 +1,60 @@
+.sectionGift {
+    padding: var(--padding-section);
+    background-color: var(--dark);
+    color: var(--white);
+
+    &__title {
+        max-width: 450px;
+        font-size: 1.7rem;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    &__intro {
+        max-width: 450px;
+        font-size: 0.9rem;
+        margin: 20px auto 40px;
+    }
+}
+
+.card {
+    border-radius: 20px;
+    border: 2px solid var(--leaf);
+    margin: 30px auto;
+    max-width: 450px;
+    padding: 30px 30px;
+    transition: scale 0.2s ease-in;
+
+    &:hover {
+        scale: 1.01 ;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+        margin: 20px auto;
+    }
+    b {
+        font-size: 0.9rem;
+        color: var(--leaf);
+    }
+
+    &__link {
+        border: none;
+        cursor: pointer;
+        background-color: var(--leaf);
+        color: var(--dark);
+        padding: 15px 50px;
+        margin: 30px auto 0px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-decoration: none;
+        width: fit-content;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
